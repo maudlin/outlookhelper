@@ -4,12 +4,13 @@ An experimental Outlook add-in that reads the body of a selected email and propo
 
 Check pattern.md for more on the Office + AI Orchestrator Pattern we're introducing
 
+Check the Microsoft site for more information on developing devcontainers: https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/one-outlook
 ---
 
 ## 🔧 Features
 
 - Outlook task pane add-in
-- Reads email subject and body
+- Reads email subject and body (and metadata where appropriate)
 - Sends to AI endpoint for response suggestions
 - Secure HTTPS dev server via Yeoman + Webpack
 - Runs inside a VS Code devcontainer (with manual sideloading)
@@ -18,6 +19,8 @@ Check pattern.md for more on the Office + AI Orchestrator Pattern we're introduc
 ---
 
 ## 🚀 Getting Started (in Devcontainer)
+
+We use a devcontainer to make this demo easy and self contained to work with. It can run inside VS Code
 
 ### 1. Clone and Open in VS Code
 
@@ -56,7 +59,7 @@ Confirm it loads correctly in a **Windows browser**.
 
 ## 🧩 Sideload into Outlook Web (Manual Step Required)
 
-Since sideloading via CLI isn't supported in Linux containers, do the following manually:
+Since sideloading via CLI isn't supported in Linux containers (the devcontainer), do the following manually:
 
 1. Open [https://outlook.office.com](https://outlook.office.com)
 2. Click ⚙️ Settings → **View all Outlook settings**
@@ -75,13 +78,11 @@ Since sideloading via CLI isn't supported in Linux containers, do the following 
 ```
 .
 ├── .devcontainer/            # VS Code container config
-├── README.md
-├── .gitignore
 └── office-helper/
     ├── manifest.xml          # Outlook manifest
     ├── package.json          # Yeoman-generated server + scripts
     ├── webpack.config.js
-    └── src/
+    └── src/                  # The actual source served by the dev web server
         ├── taskpane/
         │   ├── taskpane.html  # Add-in interface
         │   ├── taskpane.js    # JS logic (TBD)
