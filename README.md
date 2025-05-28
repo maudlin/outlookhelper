@@ -1,4 +1,4 @@
-# Smart Reply Assistant – Outlook Add-in
+# Outlook Helper – Outlook Add-in + wrapper for AI agents
 
 An experimental Outlook add-in that reads the body of a selected email and proposes AI-generated reply suggestions using a custom backend or Azure AI Foundry.
 
