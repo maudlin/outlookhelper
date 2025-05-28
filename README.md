@@ -3,8 +3,8 @@
 An experimental Outlook add-in that reads the body of a selected email and proposes AI-generated reply suggestions using a custom backend or Azure AI Foundry.
 
 Check pattern.md for more on the Office + AI Orchestrator Pattern we're introducing
-
 Check the Microsoft site for more information on developing devcontainers: https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/one-outlook
+
 ---
 
 ## 🔧 Features
