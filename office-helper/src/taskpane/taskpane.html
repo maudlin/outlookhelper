@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Office + AI Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="taskpane.js" defer></script>
+</head>
+<body class="p-4 text-sm text-gray-800 space-y-6 font-sans">
+
+  <!--  Flag Automatable Emails -->
+  <section id="automate-section">
+    <h2 class="text-lg font-semibold">Could we help with this type of email?</h2>
+    <p class="text-gray-600 mb-2">Let us know if this is something you&apos;d rather not write yourself. We&apos;ll use your feedback to improve.</p>
+    <button id="flag-btn" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"> Yes – I&apos;d love help with these</button>
+
+    <div id="reason-form" class="mt-4 space-y-2 hidden">
+      <p class="font-medium">Why would you want help with this kind of email? <span class="text-gray-500 text-xs">(Choose one)</span></p>
+      <label><input type="radio" name="reason" value="too_many" class="mr-2">I get too many like this</label><br>
+      <label><input type="radio" name="reason" value="too_long" class="mr-2">It takes too long to write</label><br>
+      <label><input type="radio" name="reason" value="admin" class="mr-2">It&apos;s repetitive admin</label><br>
+      <label class="flex items-center">
+        <input type="radio" name="reason" value="other" class="mr-2">Other
+        <input type="text" id="other-text" placeholder="Please tell us more" class="ml-2 border rounded px-2 py-1 text-xs w-full">
+      </label>
+      <button id="submit-reason" class="mt-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Send Feedback</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <!--  Suggested Response -->
+  <section id="suggestion-section">
+    <h2 class="text-lg font-semibold">Need a hand with this one?</h2>
+    <p class="text-gray-600 mb-2">Here&apos;s a suggested reply you can review or send.</p>
+
+    <div class="text-xs text-gray-500 mb-1">Suggested by AI Assistant</div>
+    <div id="suggestion-box" class="border border-gray-300 rounded p-3 bg-gray-50 text-gray-800">
+      "Thanks for the update. I&apos;ll review this and get back to you shortly."
+    </div>
+
+    <div class="flex justify-between mt-3">
+      <button id="insert-btn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Insert & Review</button>
+      <button id="not-helpful-btn" class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300" title="We use your feedback to improve our suggestions.">This wasn&apos;t helpful</button>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Devcontainer
+.devcontainer/.env
+.vscode/
+
+# Certs and secrets
+certs/
+*.pem
+*.key
+
+# Build artifacts (if added later)
+dist/
+build/
+
+# macOS / Windows noise
+.DS_Store
+Thumbs.db
+
+# Outlook sideload cache (if using Office Add-in CLI)
+.office-addin*
+
+# Logs
+logs/
+*.log
+
+# Local server PID or temp files
+*.pid
+*.tmp
