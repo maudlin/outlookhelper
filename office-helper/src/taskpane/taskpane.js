@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     console.log('🚀 Automation feedback submitted:', payload);
-    alert('Thanks! We’ll use your feedback to get better.');
+    alert('Thanks! We&apos;ll use your feedback to get better.');
 
     reasonForm.classList.add('hidden');
     document.querySelectorAll('input[name="reason"]').forEach(input => input.checked = false);
@@ -48,6 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // === Feedback: Not Helpful ===
   notHelpfulBtn.addEventListener('click', () => {
     console.log('❌ User marked suggestion as not helpful.');
-    alert('Thanks, we’ll use your feedback to improve.');
+    alert('Thanks, we&apos;ll use your feedback to improve.');
   });
 });
