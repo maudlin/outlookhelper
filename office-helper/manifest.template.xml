@@ -2,10 +2,10 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>e70764fe-7904-4fb3-9702-1d38758ec722</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
-  <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Outlook Helper"/>
-  <Description DefaultValue="A demo"/>
+  <ProviderName>Demo Corporation</ProviderName>
+  <DefaultLocale><en-GB></en-GB></DefaultLocale>
+  <DisplayName DefaultValue="Outlook AI Helper"/>
+  <Description DefaultValue="A demo of the Outlook Addin AI Orchestrator pattern"/>
   <IconUrl DefaultValue="{{HOST_URL}}/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="{{HOST_URL}}/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
